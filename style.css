@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('fonts/pacifico-webfont.woff2') format('woff2'),
+         url('fonts/pacifico-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* general setup */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'robotoregular';
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    background: #343233;
+}
+
+/* layout */
+
+section {
+    float: left;
+    width: 45%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    margin-left: 60px;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header,
+nav,
+aside,
+section,
+footer {
+    padding: 20px;
+}
+
+/* text styling */
+
+header h1 {
+    text-align: center;
+    font-size: 4.8rem;
+    color: #ffd152;
+    font-family: 'pacificoregular';
+    margin: 0;
+}
+
+section h2, aside h2 {
+    font-size: 3.3rem;
+    color: #efdab9;
+    font-family: 'ralewayregular';
+}
+
+section p {
+    font-size: 1.6rem;
+    color: #efdab9;
+}
+
+h2 + p::first-line {
+    text-indent: 20px;
+}
+
+h1,
+h2 {
+    letter-spacing: 1.5px;
+    line-height: 44px;
+}
+
+p {
+    word-spacing: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+}
+
+aside h2 {
+    font-size: 2.6rem;
+    padding-top: 6px;
+}
+
+/* links styling */
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #78b0a0;
+}
+
+
+a:hover, a:focus {
+    border-bottom: 1px solid #78b0a0;
+}
+
+a:active {
+    color: #ebac00;
+}
+
+section p a {
+    padding: 2px 1px 0px 1px;
+}
+
+.see {
+    font-size: 1.3rem;
+    margin-left: 190px;
+    color: #efdab9;
+}
+
+.see:hover, .see:focus, .see:active {
+    color: #ffd152;
+    border: none;
+}
+
+.see::after {
+    content: ' >>';
+}
+
+/* list styling */
+
+section li,
+aside li {
+    line-height: 24px;
+    font-size: 1.6rem;
+}
+
+li {
+    color: #efdab9;
+}
+
+aside ul {
+    margin-left: -20px;
+}
+
+/* nav bar */
+
+nav ul li {
+    line-height: 24px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#navbar {
+    color: #ffd152;
+    display: block;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ffd152;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#navbar:hover, #navbar:focus {
+    background: #ffd152;
+    color: #343233;
+    font-weight: 500;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+/* footer */
+
+footer {
+    height: 8vh;
+    background: #584b4f;
+    padding: 0;
+    margin: 0;
+}
+
+footer p {
+    color: #efeae1;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    line-height: normal;
+    font-size: 1.3rem;
+    padding-top: 20px;
+}
